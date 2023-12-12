@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "transpile": "tsc",
+    "generateStyles": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css",
+    "preserve": "npm run transpile && npm run generateStyles && cp index.html ./dist/index.html && cp -r src/assets dist/assets",
+    "serve": "npx browser-sync start --server 'dist' --files 'dist/**/*'",
+    "build": "npm run transpile && npm run generateStyles"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
+  }
+}
