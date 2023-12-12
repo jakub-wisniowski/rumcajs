@@ -1,9 +1,9 @@
 {
   "scripts": {
     "transpile": "tsc",
-    "generateStyles": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css",
-    "preserve": "npm run transpile && npm run generateStyles && cp index.html ./dist/index.html && cp -r src/assets dist/assets",
-    "serve": "npx browser-sync start --server 'dist' --files 'dist/**/*'",
+    "generateStyles": "npx tailwindcss -i ./src/styles.css -o ./docs/output.css",
+    "preserve": "npm run transpile && npm run generateStyles && cp index.html ./docs/index.html && cp -r src/assets docs/assets",
+    "serve": "npx browser-sync start --server 'docs' --files 'docs/**/*'",
     "build": "npm run transpile && npm run generateStyles"
   },
   "devDependencies": {
