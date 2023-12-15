@@ -4,7 +4,7 @@
     "generateStyles": "npx tailwindcss -i ./src/styles.css -o ./docs/output.css",
     "preserve": "npm run transpile && npm run generateStyles && cp index.html ./docs/index.html && cp -r src/assets docs/assets",
     "serve": "npx browser-sync start --server 'docs' --files 'docs/**/*'",
-    "build": "npm run transpile && npm run generateStyles"
+    "build": "npm run transpile && npm run generateStyles && cp index.html ./docs/index.html && cp -r src/assets docs/assets"
   },
   "devDependencies": {
     "prettier": "^3.0.3",
