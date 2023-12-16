@@ -13,7 +13,7 @@
     </head>
     <body class="min-h-screen text-base">
         <nav class="bg-gray-700 py-4">
-            <div class="container max-w-[90%]">
+            <div class="container lg:max-w-[1200px]">
                 <div class="flex flex-row justify-between">
                     <a
                         class="text-gray-200 hover:text-red-600"
@@ -28,38 +28,66 @@
             </div>
         </nav>
         <section>
-            <div class="container max-w-[90%]" id="mainContent">
+            <div class="container lg:max-w-[1200px]" id="mainContent">
                 <h1
                     data-i18n="mainHeader"
                     class="pb-3 pt-10 text-2xl font-bold"
                 ></h1>
                 <hr />
                 <div class="relative max-w-sm pb-28 md:pb-0">
-                    <p data-i18n="mainParagraph" class="py-7 max-w-sm ">
-                    </p>
-                    <img class="w-28 h-28 absolute bottom-0 right-0 md:-right-32" src="assets/images/rumcajs.png" data-i18n-alt="imageAlt">
+                    <p data-i18n="mainParagraph" class="py-7 max-w-sm"></p>
+                    <img
+                        class="w-28 h-28 absolute bottom-0 right-0 md:-right-32"
+                        src="assets/images/rumcajs.png"
+                        data-i18n-alt="imageAlt"
+                    />
                 </div>
                 <hr />
             </div>
         </section>
         <section>
-            <div class="container max-w-[90%] flex flex-col md:items-end">
+            <div class="container lg:max-w-[1200px] flex flex-col md:items-end">
                 <h2
                     data-i18n="handbookHeader"
                     class="pb-3 pt-10 text-lg font-bold"
                 ></h2>
-                <p data-i18n="handbookParagraph" class="py-7 max-w-sm md:text-right"></p>
-                <a href="assets/poradnik.pdf" data-i18n="handbookDownload" target="_blank"></a>
+                <p
+                    data-i18n="handbookParagraph"
+                    class="py-7 max-w-sm md:text-right"
+                ></p>
+                <a
+                    class="p-4 rounded-md bg-gray-700 text-white hover:text-red-600 font-bold max-w-fit"
+                    href="assets/poradnik.pdf"
+                    data-i18n="handbookDownload"
+                    target="_blank"
+                ></a>
             </div>
         </section>
         <footer
-            class="absolute bottom-0 w-full bg-gray-700 py-10 font-semibold text-gray-200"
+            class="w-full bg-gray-700 py-4 md:py-10 font-semibold text-gray-200 md:absolute md:bottom-0"
         >
-            <div class="container flex flex-col gap-5">
-                <div>&copy; <span id="currentYear"></span> <span data-i18n="ownership" class="ml-1"></p></div>                      
-                <a class="flex flex-row gap-2 hover:text-red-600" href="mailto:kolektyw-rumcajs@protonmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            <div class="container flex flex-col gap-5 lg:max-w-[1200px]">
+                <div>
+                    &copy; <span id="currentYear"></span>
+                    <span data-i18n="ownership" class="ml-1"></span>
+                </div>
+                <a
+                    class="flex flex-row gap-2 hover:text-red-600"
+                    href="mailto:kolektyw-rumcajs@protonmail.com"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                        />
                     </svg>
                     kolektyw-rumcajs@protonmail.com
                 </a>

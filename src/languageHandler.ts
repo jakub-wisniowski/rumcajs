@@ -21,7 +21,7 @@ const fetchLanguageData = async (lang: LANGUAGE): Promise<TranslationFile> => {
 const updateTranslations = (langData: TranslationFile) => {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
         const key = el.getAttribute("data-i18n");
-        if (key) el.textContent = langData[key];
+        if (key) el.innerHTML = langData[key];
     });
 };
 
