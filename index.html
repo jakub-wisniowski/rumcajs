@@ -11,7 +11,7 @@
         <script type="module" src="/main.js"></script>
         <title data-i18n="pageTitle"></title>
     </head>
-    <body class="min-h-screen text-base">
+    <body class="min-h-screen text-base relative">
         <nav class="bg-gray-700 py-4">
             <div class="container px-3 lg:max-w-[768px]">
                 <div class="flex flex-row justify-between">
@@ -45,7 +45,7 @@
                 <hr />
             </div>
         </section>
-        <section class="pb-10 sm:pb-20 md:pb-0">
+        <section class="pb-10 sm:pb-20 md:pb-96 2xl:pb-0">
             <div
                 class="container px-3 lg:max-w-[768px] flex flex-row justify-end md:justify-between"
             >
@@ -71,7 +71,7 @@
             </div>
         </section>
         <footer
-            class="w-full bg-gray-700 py-4 md:py-10 font-semibold text-gray-200 sm:absolute sm:bottom-0"
+            class="w-full bg-gray-700 py-4 md:py-10 font-semibold text-gray-200 md:absolute md:bottom-0"
         >
             <div class="container px-3 gap-5 lg:max-w-[768px] flex flex-col md:flex-row justify-between">
                 <div class="flex flex-col gap-5">
@@ -81,7 +81,7 @@
                     </div>
                     <a
                         class="flex flex-row gap-2 hover:text-red-600"
-                        href="mailto:kolektyw-rumcajs@protonmail.com"
+                        href="mailto:kolektyw.rumcajs@protonmail.com"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -97,11 +97,11 @@
                                 d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                             />
                         </svg>
-                        kolektyw-rumcajs@protonmail.com
+                        kolektyw.rumcajs@protonmail.com
                     </a>
                 </div>
 
-                <span class="font-light text-sm">grafika: vectorjuice z Freepik</span>
+                <span class="text-xs" data-i18n="graphics"></span>
             </div>
         </footer>
     </body>
